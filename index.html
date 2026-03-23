@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DigitalHausa Home</title>
+<link rel="stylesheet" href="css/styles.css">
+<style>
+  .hero { text-align: center; padding: 40px 20px; background: #0b1220; border-radius: 12px; margin-bottom: 30px; }
+  .quick-search-container { position: relative; margin: 20px 0; }
+  #quickResults { 
+    position: absolute; width: 100%; background: #0b1220; border: 1px solid #333; 
+    border-radius: 0 0 8px 8px; z-index: 10; max-height: 200px; overflow-y: auto; 
+  }
+  .quick-item { padding: 10px; cursor: pointer; border-bottom: 1px solid #1a2639; }
+  .quick-item:hover { background: #1a2639; color: #f0c94a; }
+  .home-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px; }
+  @media (max-width: 600px) { .home-grid { grid-template-columns: 1fr; } }
+  .mini-box { background: #0b1220; padding: 20px; border-radius: 12px; border: 1px solid #1a2639; }
+</style>
+</head>
+<body>
+
+<header>
+  <img src="assets/logo.svg" alt="Logo">
+  <div class="header-content">
+    <h2>DigitalHausa</h2>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="dictionary.html">Dictionary</a>
+      <a href="converter.html">Converter</a>
+      <a href="stories.html">Stories</a>
+      <a href="about.html">About</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <h1>Welcome to DigitalHausa</h1>
+    <p>The digital gateway to Hausa language and Ajami script.</p>
+    
+    <div class="quick-search-container">
+      <input type="text" id="quickSearch" placeholder="Quick find a word (e.g., gida)...">
+      <div id="quickResults"></div>
+    </div>
+  </section>
+
+  <div class="home-grid">
+    <div class="mini-box">
+      <h3>Quick Ajami Convert</h3>
+      <input type="text" id="miniInput" placeholder="Type in Latin...">
+      <button id="miniConvert">Convert</button>
+      <div id="miniOutput" class="ajami" style="margin-top:15px; min-height:30px; color:#f0c94a; font-size:24px;"></div>
+    </div>
+
+    <div class="mini-box">
+      <h3>Learn Ajami</h3>
+      <p>Ajami is the Arabic-based script used for writing African languages like Hausa for centuries.</p>
+      <a href="about.html" style="color:#f0c94a; text-decoration:none; font-weight:bold;">Learn more →</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p>DigitalHausa — Preserving Hausa Language and Ajami Script</p>
+  <button id="correctionBtn" style="background:transparent; color:#f0c94a; border:1px solid #f0c94a; margin-top:10px; font-size:0.8em;">
+    Report a Suggestion
+  </button>
+</footer>
+
+
+<script src="data/dictionary.js"></script>
+<script src="js/converter.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

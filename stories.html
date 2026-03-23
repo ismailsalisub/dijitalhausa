@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Stories</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+  <img src="assets/logo.svg" alt="Logo">
+  <div class="header-content">
+    <h2>DigitalHausa</h2>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="dictionary.html">Dictionary</a>
+      <a href="converter.html">Converter</a>
+      <a href="stories.html">Stories</a>
+      <a href="about.html">About</a>
+    </nav>
+  </div>
+</header>
+
+  <main>
+    <h1>Stories</h1>
+    <div id='storiesList'></div>
+  </main>
+  <footer>
+  <p>DigitalHausa — Preserving Hausa Language and Ajami Script</p>
+  <button id="correctionBtn" style="background:transparent; color:#f0c94a; border:1px solid #f0c94a; margin-top:10px; font-size:0.8em;">
+    Submit a Story
+  </button>
+</footer>
+
+  <script src="js/converter.js"></script>
+  <script src='data/stories.js'></script>
+  <script src='js/stories.js'></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
