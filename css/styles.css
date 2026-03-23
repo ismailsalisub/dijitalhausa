@@ -1,0 +1,140 @@
+
+body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#08192b;color:#e6eef8}
+header{background:#0b1220;padding:15px;display:flex;align-items:center;gap:15px}
+header img{height:40px}
+nav a{color:#9fb3c8;margin-right:12px;text-decoration:none;font-weight:bold}
+main{padding:20px}
+footer{text-align:center;padding:20px;background:#0b1220;color:#9fb3c8;margin-top:40px}
+.word-card{background:#0b1220;padding:12px;border-radius:8px;margin:10px 0}
+.ajami{direction:rtl;font-size:18px}
+textarea,input{width:100%;padding:8px;margin-top:8px;border-radius:6px;border:1px solid #333;background:#071028;color:white; resize: none;}
+button{margin-top:10px;padding:8px 12px;background:#f0c94a;border:none;border-radius:6px;font-weight:bold}
+nav a.active{
+color:#0f766e;
+font-weight:bold;
+border-bottom:2px solid #0f766e;
+}
+/* Header Layout Adjustments */
+header {
+  position: relative;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Hide Hamburger by default */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: #f0c94a;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.output-group textarea {
+  min-height: 120px;
+  padding-top: 40px; /* Space for the floating copy button */
+}
+
+#copyBtn:hover {
+  background: #d4ac2b;
+}
+
+#clearBtn:hover {
+  background: #475569 !important;
+}
+
+.word-card {
+  transition: transform 0.2s ease;
+}
+
+.word-card:hover {
+  background: #111b2b;
+}
+
+.use-cases li {
+  margin-bottom: 4px;
+  color: #9fb3c8;
+}
+
+.use-cases li b {
+  color: #fff;
+}
+
+/* Add a smooth fade-in for details */
+.card-details {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.use-cases b:hover {
+  color: #fff !important;
+  background: rgba(240, 201, 74, 0.2);
+  border-radius: 3px;
+}
+
+#correctionBtn {
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+#correctionBtn:hover {
+  background: #f0c94a !important;
+  color: #0b1220 !important;
+}
+
+
+/* Mobile View (600px and below) */
+@media (max-width: 600px) {
+  .menu-toggle {
+    display: flex; /* Show hamburger */
+  }
+
+  nav {
+    display: none; /* Hide nav links */
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #0b1220;
+    padding: 20px;
+    border-bottom: 2px solid #1a2639;
+    z-index: 100;
+  }
+
+  nav.active {
+    display: flex; /* Show when active class is added */
+  }
+
+  nav a {
+    margin: 10px 0;
+    font-size: 1.1em;
+  }
+}
