@@ -33,5 +33,65 @@ const dictionary = [
       { phrase: "gora", meaning: "a heavy stick used for defense or threshing soy beans" }
     ],
     examples: ["Ya yi amfani da gora wajen bugun waken suya"] 
+  },
+    {
+    word: "abinci",
+    english: "food",
+    plural: "abinci-abinci",
+    ajami: "أَبِنثِي",
+    synonyms: ["tuwo", "kallabi"],
+    use_cases: [
+      { phrase: "abinci mai kyau", meaning: "good/healthy food" },
+      { phrase: "diban abinci", meaning: "serving food" }
+    ],
+    examples: ["Ina son cin abinci.", "Abinci ya nuna."]
+  },
+  {
+    word: "ruwa",
+    english: "water / rain",
+    plural: "ruwaye",
+    ajami: "رُوَوا",
+    synonyms: ["mazari"],
+    use_cases: [
+      { phrase: "ruwan sha", meaning: "drinking water" },
+      { phrase: "ruwan sama", meaning: "rain" }
+    ],
+    examples: ["Ina jin ƙishirwar ruwa.", "An yi ruwa jiya."]
+  },
+  {
+    word: "gida",
+    english: "house / home",
+    plural: "gidaje",
+    ajami: "غِدَا",
+    synonyms: ["tsangaya"],
+    use_cases: [
+      { phrase: "mai gida", meaning: "head of the house / husband" },
+      { phrase: "dan gida", meaning: "family member / insider" }
+    ],
+    examples: ["Zan tafi gida yanzu.", "Gidanmu yana da kyau."]
+  },
+  {
+    word: "mota",
+    english: "car / vehicle",
+    plural: "motoci",
+    ajami: "مُوتَا",
+    synonyms: ["abin hawa"],
+    use_cases: [
+      { phrase: "tukin mota", meaning: "driving a car" },
+      { phrase: "gyaran mota", meaning: "car repair" }
+    ],
+    examples: ["Motarsa tana da sauri.", "Zan sayi sabuwar mota."]
+  },
+  {
+    word: "littafi",
+    english: "book",
+    plural: "littattafai",
+    ajami: "لِتَّافِي",
+    synonyms: ["takarda"],
+    use_cases: [
+      { phrase: "karatun littafi", meaning: "reading a book" },
+      { phrase: "rubuta littafi", meaning: "writing a book" }
+    ],
+    examples: ["Wannan littafi ne mai amfani.", "Ina karanta littafi."]
   }
 ];
